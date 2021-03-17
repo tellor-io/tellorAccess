@@ -98,7 +98,7 @@ let run = async function (net) {
         //***************BSC, MATIC, MUMBAI Etc...******************************
         } else if (net == "rinkeby") {
             var network = "rinkeby"
-            //*************** UPDATE exploerer URL to BSC, MATIC, MUMBAI Etc...******************************
+            //*************** UPDATE explorer URL to BSC, MATIC, MUMBAI Etc...******************************
             var etherscanUrl = "https://rinkeby.etherscan.io"
             //***************UPDATE PLAYGROUND ADDRESS***************************
             //***********BSC, MATIC, MUMBAI Etc...******************************
@@ -141,7 +141,7 @@ let run = async function (net) {
             var abi = await loadJsonFile(path.join("abi", "tellor.json"))
 
         } else if (network == "rinkeby") {
-            var abi = await loadJsonFile(path.join("abi", "abiTellorPlaygroundCentralized.json"))
+            var abi = await loadJsonFile(path.join("abi", "abiTellorAccess.json"))
         } else {
             console.log("not a valid network. ABI not loaded")
         }

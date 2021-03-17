@@ -1,7 +1,7 @@
-const Tellor = artifacts.require("./TellorPlayground.sol"); // globally injected artifacts helper
+const Tellor = artifacts.require("./TellorAccess.sol"); // globally injected artifacts helper
 const helper = require("./helpers/test_helpers");
 
-contract("TellorPlayground Centralized Tests", function(accounts) {
+contract("TellorAccess Tests", function(accounts) {
   let tellor;
 
   beforeEach("Setup contract for each test", async function() {

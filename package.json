@@ -1,5 +1,5 @@
 {
-  "name": "tellorplayground",
+  "name": "telloraccess",
   "version": "1.0.0",
   "description": "",
   "main": "truffle-config.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tellor-io/TellorPlayground.git"
+    "url": "git+https://github.com/tellor-io/tellorAccess.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tellor-io/TellorPlayground/issues"
+    "url": "https://github.com/tellor-io/tellorAccess/issues"
   },
-  "homepage": "https://github.com/tellor-io/TellorPlayground#readme",
+  "homepage": "https://github.com/tellor-io/tellorAccess#readme",
   "devDependencies": {
     "ethers": "^5.0.31",
     "hardhat": "^2.0.10",

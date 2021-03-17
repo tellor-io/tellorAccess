@@ -19,13 +19,13 @@ task("deploy", "Deploy and verify the contracts")
   .setAction(async taskArgs => {
 
 
-    console.log("deploy tellor playground with access")
+    console.log("deploy telloraccess")
     var name = taskArgs.name
     var symbol = taskArgs.symbol
     var net = taskArgs.network
 
     await run("compile");
-    const Tellor = await ethers.getContractFactory("TellorPlayground");
+    const Tellor = await ethers.getContractFactory("TellorAccess");
     const tellor= await Tellor.deploy(name, symbol);
     console.log("Tellor deployed to:", tellor.address);
     await tellor.deployed();
