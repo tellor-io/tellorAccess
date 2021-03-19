@@ -1,10 +1,10 @@
-/**************************Ethereum Auto data tip or feed********************************************/
+/**********************************************************************/
 
-//               Tellor AddTip or SubmitValue to Playground          //
+//               TellorAccess SubmitValue     //
 
 /******************************************************************************************/
 
-// node scripts/01_AddTipOrFeedPlayground.js network
+// node scripts/01_SubmitValue.js network
 require('dotenv').config()
 var BigNumber = require('bignumber.js');
 const ethers = require('ethers');
@@ -16,7 +16,6 @@ var _UTCtime = new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '')
 var gas_limit = 400000
 
 console.log(_UTCtime)
-console.log('https://www.etherchain.org/api/gasPriceOracle')
 console.log('network',process.argv[2])
 
 function sleep_s(secs) {
