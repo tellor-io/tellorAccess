@@ -22,9 +22,12 @@ jobs:
         CI: true
         # These are not needed for the tests but
         # hardhat fails to start when not present.
-        NODE_URL_RINKEBY: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-        NODE_URL_MAINNET: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-        PRIVATE_KEY: "00000000000000000000000000000000000000000000000000"
+        NODE_URL_RINKEBY: ${{ secrets.RINKEBY_NODE }}
+        NODE_URL_MAINNET: ${{ secrets.MAINNET_NODE }}
+        PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+        #NODE_URL_RINKEBY: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        #NODE_URL_MAINNET: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        #PRIVATE_KEY: "00000000000000000000000000000000000000000000000000"
   Linting:
     runs-on: ubuntu-latest
     steps:
