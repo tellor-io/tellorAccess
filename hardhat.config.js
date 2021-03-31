@@ -80,38 +80,38 @@ module.exports = {
   },
 
   networks: {
-    hardhat: {
-      accounts: {
-        mnemonic:
-          "nick lucian brenda kevin sam fiscal patch fly damp ocean produce wish",
-        count: 40,
-      },
-      allowUnlimitedContractSize: true,
-    },
-      rinkeby: {
-        url: `${process.env.NODE_URL_RINKEBY}`,
-        accounts: [process.env.RINKEBY_ETH_PK],
-        gas: 10000000 ,
-        gasPrice: 190000000000
-      },
+    // hardhat: {
+    //   accounts: {
+    //     mnemonic:
+    //       "nick lucian brenda kevin sam fiscal patch fly damp ocean produce wish",
+    //     count: 40,
+    //   },
+    //   allowUnlimitedContractSize: true,
+    // },
+      // rinkeby: {
+      //   url: `${process.env.NODE_URL_RINKEBY}`,
+      //   accounts: [process.env.RINKEBY_ETH_PK],
+      //   gas: 10000000 ,
+      //   gasPrice: 190000000000
+      // },
       // mainnet: {
       //   url: `${process.env.NODE_URL_MAINNET}`,
       //   accounts: [process.env.ETH_PK],
       //   gas: 12000000 ,
       //   gasPrice: 190000000000
       // } ,
-      bsc_testnet: {
-        url: "https://data-seed-prebsc-1-s1.binance.org:8545",
-        chainId: 97,
-        gasPrice: 20000000000,
-        accounts: [process.env.BSC_PK]
-      },
-      bsc: {
-        url: "https://bsc-dataseed.binance.org/",
-        chainId: 56,
-        gasPrice: 20000000000,
-        accounts: [process.env.BSC_PK]
-      } 
+      // bsc_testnet: {
+      //   url: "https://data-seed-prebsc-1-s1.binance.org:8545",
+      //   chainId: 97,
+      //   gasPrice: 20000000000,
+      //   accounts: [process.env.BSC_PK]
+      // },
+      // bsc: {
+      //   url: "https://bsc-dataseed.binance.org/",
+      //   chainId: 56,
+      //   gasPrice: 20000000000,
+      //   accounts: [process.env.BSC_PK]
+      // } 
   },
   etherscan: {
       // Your API key for Etherscan
