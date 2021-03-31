@@ -247,8 +247,8 @@
       ]
     },
     "/home/brenda/projects/bsc/tellorAccess/contracts/TellorAccess.sol": {
-      "lastModificationDate": 1616116139230,
-      "contentHash": "494d86e459ae7e14bf09684554634e50",
+      "lastModificationDate": 1616178724765,
+      "contentHash": "22af6a6e4c6925f20d804f51a9e2c52a",
       "sourceName": "contracts/TellorAccess.sol",
       "solcConfig": {
         "version": "0.7.0",

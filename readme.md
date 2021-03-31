@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/tellor-io/tellorAccess/badge.svg?branch=main)](https://coveralls.io/github/tellor-io/tellorAccess?branch=main)
+
 <p align="center">
   <a href='https://www.tellor.io/'>
     <img src= 'https://raw.githubusercontent.com/tellor-io/TellorBrandMaterials/master/LightBkrnd_RGB.png' width="250" height="200" alt='tellor.io' />

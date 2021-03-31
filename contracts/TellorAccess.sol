@@ -151,16 +151,6 @@ contract TellorAccess is AccessControl {
         emit NewValue(_requestId, block.timestamp, _value);
     }
 
-    // /**
-    // * @dev A mock function to create a dispute
-    // * @param _requestId The tellorId to be disputed
-    // * @param _timestamp the timestamp that indentifies for the value
-    // */
-    // function disputeValue(uint256 _requestId, uint256 _timestamp) external {
-    //     require(isReporter(msg.sender) || isAdmin(msg.sender), "Sender must be an Admin or Reporter to dispute a value");
-    //     values[_requestId][_timestamp] = 0;
-    //     isDisputed[_requestId][_timestamp] = true;
-    // }
 
      /**
     * @dev Retreive value from oracle based on requestId/timestamp
@@ -172,15 +162,6 @@ contract TellorAccess is AccessControl {
         return values[_requestId][_timestamp];
     }
 
-    // /**
-    // * @dev Gets if the mined value for the specified requestId/_timestamp is currently under dispute
-    // * @param _requestId to looku p
-    // * @param _timestamp is the timestamp to look up miners for
-    // * @return bool true if requestId/timestamp is under dispute
-    // */
-    // function isInDispute(uint256 _requestId, uint256 _timestamp) public view returns(bool){
-    //     return isDisputed[_requestId][_timestamp];
-    // }
 
     /**
     * @dev Counts the number of values that have been submited for the request
