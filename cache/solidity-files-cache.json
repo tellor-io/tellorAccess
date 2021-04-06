@@ -220,7 +220,7 @@
         "version": "0.7.0",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 999999
           },
           "outputSelection": {
@@ -235,9 +235,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -250,14 +247,14 @@
       ]
     },
     "/home/brenda/projects/bsc/tellorAccess/contracts/TellorAccess.sol": {
-      "lastModificationDate": 1616178724765,
-      "contentHash": "22af6a6e4c6925f20d804f51a9e2c52a",
+      "lastModificationDate": 1617677701770,
+      "contentHash": "493f602c7cd8f3826ab9df27b9dc632e",
       "sourceName": "contracts/TellorAccess.sol",
       "solcConfig": {
         "version": "0.7.0",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 999999
           },
           "outputSelection": {
@@ -272,9 +269,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -297,7 +291,7 @@
         "version": "0.7.0",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 999999
           },
           "outputSelection": {
@@ -312,9 +306,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -338,7 +329,7 @@
         "version": "0.7.0",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 999999
           },
           "outputSelection": {
@@ -353,9 +344,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -375,7 +363,7 @@
         "version": "0.7.0",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 999999
           },
           "outputSelection": {
@@ -390,9 +378,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
@@ -412,7 +397,7 @@
         "version": "0.7.0",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 999999
           },
           "outputSelection": {
@@ -427,9 +412,6 @@
                 "ast"
               ]
             }
-          },
-          "metadata": {
-            "useLiteralContent": false
           }
         }
       },
