@@ -15,7 +15,9 @@ contract("TellorAccess Tests", function(accounts) {
     await helper.expectThrow(
         master.addAdmin(accounts[3], { from: accounts[2] })
     );
-    master.addAdmin(accounts[3], { from: accounts[1]] })
+    master.addAdmin(accounts[3], { from: accounts[1] })
+    let test = await master.isAdmin(accounts[3])
+    console.log("test", test)
   });
 
   //4. addReporter 
@@ -24,20 +26,50 @@ contract("TellorAccess Tests", function(accounts) {
     await helper.expectThrow(
         master.addReporter(accounts[3], { from: accounts[2] })
     );
-    master.addReporter(accounts[3], { from: accounts[1]] })
+    master.addReporter(accounts[3], { from: accounts[1] })
   });
 
-  //get current value
+  //5.0get current value
   //getCurrentValue(uint256 requestId)
+    it("getCurrentValue", async function() {
+      await master.addReporter(accounts[1], { from: accounts[0] })
+      await master.submitValue(1,200, { from: accounts[1] })
+      await helper.advanceTime(84000)
+      await master.submitValue(1,400, { from: accounts[0] })
+      //bool ifRetrieve, uint256 value, uint256 timestampRetrieved
+      let vars = await master.getCurrentValue(1)
+      assert(vars[1]*1 == 400, "getCurrentValue is Not pulling current/latest value")
+    });
 
   //get data before
   //getDataBefore(uint256 requestId, uint256 timestamp)
 
   //remove reporter
   //removeReporter(address reporter_address)
+    //7. addReporter 
+    it("Only admin should be able to remove a Reporter", async function() {
+      //console.log(accounts[0],accounts[1])
+      master.addReporter(accounts[3], { from: accounts[1] })
+      await helper.expectThrow(
+          master.removeReporter(accounts[3], { from: accounts[4] })
+      );
+      master.removeReporter(accounts[3], { from: accounts[1] })
+    });
 
   //renounce Admin
   //renounceAdmin()
+  it("Only an admin can renounce their admin rights", async function() {
+    //console.log(accounts[0],accounts[1])
+
+    await master.addAdmin(accounts[3], { from: accounts[1] })
+    console.log(1)
+    let admin = await master.isAdmin(accounts[3])
+    console.log("admin true?", admin)
+    await master.renounceAdmin({ from: accounts[3] })
+    admin = await master.isAdmin(accounts[3])
+    console.log("admin false?", admin)
+
+  });
 
   //submitValue--require IsAdmin and IsReporter
   it("Owner should be able to add data", async function() {
