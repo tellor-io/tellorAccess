@@ -29,18 +29,18 @@ Use this repository if your project needs:
 
 ### Reading values
 
-The first setup is to inherit the TellorAccess contract, passing the TellorAccess address as a constructor argument: 
+The first step is to inherit the TellorAccess contract by passing the TellorAccess address as a constructor argument: 
 
 Here's an example
 ```solidity 
 contract BtcPriceContract is TellorAccess {
 
-  //This Contract now have access to all functions on TellorAccess
+  //This Contract now has access to all functions on TellorAccess
 
   uint256 btcPrice;
   uint256 btcRequetId = 2;
 
-  constructor(address payable _tellorAddress) TellorAcess(_tellorAddress) public {}
+  constructor(address payable tellorAccessAddress) TellorAcess(tellorAccessAddress) public {}
 
   ...
 }
@@ -52,10 +52,10 @@ contract BtcPriceContract is TellorAccess {
 
 ```solidity
     /**
-     * @dev Add an account to the reporter role. Restricted to admins.
-     * @param account is the address of the reporter to give permissions to submit data
+     * @dev Add an address to the reporter role. Restricted to admins.
+     * @param reporter_address is the address of the reporter to give permissions to submit data
      */
-    function addReporter(address account) public virtual onlyAdmin;
+    function addReporter(address reporter_address) public virtual onlyAdmin;
 
 ```
 
@@ -64,7 +64,7 @@ contract BtcPriceContract is TellorAccess {
 
 ```solidity
     /**
-    * @dev A mock function to submit a value to be read withoun miners needed
+    * @dev A function to submit a values by reporters
     * @param _requestId The tellorId to associate the value to
     * @param _value the value for the requestId
     */
