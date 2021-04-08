@@ -43,24 +43,35 @@ contract("TellorAccess Tests", function(accounts) {
       let vars = await master.getCurrentValue(1)
       assert(vars[1]*1 == 400, "getCurrentValue is Not pulling current/latest value")
     });
-/**
+
     //6.getDataBefore(uint256 requestId, uint256 timestamp)
     it("getDataBefore", async function() {
       await master.addReporter(accounts[1], { from: accounts[0] })
       var value = 200
-      for (var i = 0; i < 10; i++) {
+      for (var i = 1; i <= 100; i++) {
       await master.submitValue(1,value, { from: accounts[1] })
       await helper.advanceTime(84000)
       value ++ 
       }
 
-    let lowValue = await oracle.getTimestampbyRequestIDandIndex(requestId, 0)
-    let highValue = await oracle.getTimestampbyRequestIDandIndex(requestId,100)
-      //bool ifRetrieve, uint256 value, uint256 timestampRetrieved
-      let vars = await master.getCurrentValue(1)
-      assert(vars[1]*1 == 400, "getCurrentValue is Not pulling current/latest value")
+    let minTime = await master.getTimestampbyRequestIDandIndex(1, 1)
+    let maxTime = await master.getTimestampbyRequestIDandIndex(1,99)
+    //console.log("minTime", minTime*1)
+    //console.log("maxTime", maxTime*1)
+    let midTime = Math.round(maxTime*1 - ((maxTime*1-minTime*1)/2))
+    //console.log("midTime", Math.round(midTime))
+
+    let oldDataLow = await master.getDataBefore(1, minTime)
+    //console.log(oldDataLow[0], oldDataLow[1]*1)
+    let oldDataMid = await master.getDataBefore(1, midTime)
+    //console.log(oldDataMid[0], oldDataMid[1]*1)
+    let oldDataMax = await master.getDataBefore(1, maxTime)
+    //console.log(oldDataMax[0],oldDataMax[1]*1)
+
+    assert( oldDataMid[1] == 249, "Mid value does not correspond to closest to mid timestamp")    
+
     });
-*/
+
  
     //7. removeReporter(address reporter_address) 
     it("Only admin should be able to remove a Reporter", async function() {

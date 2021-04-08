@@ -38,7 +38,7 @@ jobs:
         with:
           node-version: "14.x"
       - run: npm install
-      - run: npx hardhat coverage
+      - run: npx hardhat coverage --solcoverjs ./../.solcover.js
 
       - name: Coveralls
         uses: coverallsapp/github-action@v1.1.2
