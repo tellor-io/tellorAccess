@@ -1,4 +1,4 @@
-require("@nomiclabs/hardhat-truffle5");
+ require("@nomiclabs/hardhat-truffle5");
 require("hardhat-gas-reporter");
 require('hardhat-contract-sizer');
 require("solidity-coverage");
@@ -8,26 +8,23 @@ require("dotenv").config();
 
 
 //Run this commands to deploy tellor playground:
-//npx hardhat deploy --name "tellor" --symbol "PTRB" --net rinkeby --network rinkeby
-//npx hardhat deploy --name "tellor" --symbol "PTRB" --net mainnet --network mainnet
-//npx hardhat deploy --name tellor --symbol PTRB --net bsc_testnet --network bsc_testnet
+//npx hardhat deploy  --net rinkeby --network rinkeby
+//npx hardhat deploy  --net mainnet --network mainnet
+//npx hardhat deploy  --net bsc_testnet --network bsc_testnet
 
 task("deploy", "Deploy and verify the contracts")
-  .addParam("name", "coin name")
-  .addParam("symbol", "coin symbol")
   .addParam("net", "network to deploy in")
   .setAction(async taskArgs => {
 
 
     console.log("deploy telloraccess")
-    var name = taskArgs.name
-    var symbol = taskArgs.symbol
     var net = taskArgs.network
 
     await run("compile");
-    const Tellor = await ethers.getContractFactory("TellorAccess");
-    const tellor= await Tellor.deploy(name, symbol);
-    console.log("Tellor deployed to:", tellor.address);
+    const tellorAccess = await ethers.getContractFactory("TellorAccess");
+    //console.log(tellor)
+    let tellor = await tellorAccess.deploy();
+    console.log("TellorAccess deployed to:", tellor.address);
     await tellor.deployed();
 
     if (net == "mainnet"){
@@ -55,14 +52,13 @@ task("deploy", "Deploy and verify the contracts")
     console.log('submitting contract for verification...');
 
     await run("verify:verify", {
-      address: tellor.address,
-      constructorArguments: [name, symbol]
+      address: tellor.address
     },
     )
 
     console.log("Contract verified")
 
-  });
+  }); 
 
 
 /**
@@ -80,38 +76,38 @@ module.exports = {
   },
 
   networks: {
-    // hardhat: {
-    //   accounts: {
-    //     mnemonic:
-    //       "nick lucian brenda kevin sam fiscal patch fly damp ocean produce wish",
-    //     count: 40,
-    //   },
-    //   allowUnlimitedContractSize: true,
-    // },
-      // rinkeby: {
-      //   url: `${process.env.NODE_URL_RINKEBY}`,
-      //   accounts: [process.env.RINKEBY_ETH_PK],
-      //   gas: 10000000 ,
-      //   gasPrice: 190000000000
-      // },
+    hardhat: {
+      accounts: {
+        mnemonic:
+          "nick lucian brenda kevin sam fiscal patch fly damp ocean produce wish",
+        count: 40,
+      },
+      allowUnlimitedContractSize: true,
+    },
+      rinkeby: {
+        url: `${process.env.NODE_URL_RINKEBY}`,
+        accounts: [process.env.RINKEBY_ETH_PK],
+        gas: 10000000 ,
+        gasPrice: 190000000000
+      },
       // mainnet: {
       //   url: `${process.env.NODE_URL_MAINNET}`,
       //   accounts: [process.env.ETH_PK],
       //   gas: 12000000 ,
       //   gasPrice: 190000000000
       // } ,
-      // bsc_testnet: {
-      //   url: "https://data-seed-prebsc-1-s1.binance.org:8545",
-      //   chainId: 97,
-      //   gasPrice: 20000000000,
-      //   accounts: [process.env.BSC_PK]
-      // },
-      // bsc: {
-      //   url: "https://bsc-dataseed.binance.org/",
-      //   chainId: 56,
-      //   gasPrice: 20000000000,
-      //   accounts: [process.env.BSC_PK]
-      // } 
+      bsc_testnet: {
+        url: "https://data-seed-prebsc-1-s1.binance.org:8545",
+        chainId: 97,
+        gasPrice: 20000000000,
+        accounts: [process.env.BSC_PK]
+      },
+      bsc: {
+        url: "https://bsc-dataseed.binance.org/",
+        chainId: 56,
+        gasPrice: 20000000000,
+        accounts: [process.env.BSC_PK]
+      } 
   },
   etherscan: {
       // Your API key for Etherscan
