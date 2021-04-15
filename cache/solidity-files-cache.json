@@ -37,7 +37,7 @@
     },
     "/home/nfett/coder/tellorAccess/contracts/TellorAccess.sol": {
       "lastModificationDate": 1618507096918,
-      "contentHash": "b7f4bc29bbffa5164ccd13f60dc35866",
+      "contentHash": "a6da5b808add251749877114aa8e389b",
       "sourceName": "contracts/TellorAccess.sol",
       "solcConfig": {
         "version": "0.7.0",
@@ -62,13 +62,13 @@
         }
       },
       "imports": [
-        "@openzeppelin/contracts/access/AccessControl.sol"
+        "@openzeppelin/contracts/access/AccessControl.sol",
+        "./SafeMath.sol"
       ],
       "versionPragmas": [
         "0.7.0"
       ],
       "artifacts": [
-        "SafeMath",
         "TellorAccess"
       ]
     },
@@ -244,6 +244,40 @@
       ],
       "artifacts": [
         "Context"
+      ]
+    },
+    "/home/nfett/coder/tellorAccess/contracts/SafeMath.sol": {
+      "lastModificationDate": 1618509107332,
+      "contentHash": "2714d59db037275a2134d461512d4a50",
+      "sourceName": "contracts/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 999999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.7.0"
+      ],
+      "artifacts": [
+        "SafeMath"
       ]
     }
   }
