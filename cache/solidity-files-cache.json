@@ -37,7 +37,7 @@
     },
     "/home/nfett/coder/tellorAccess/contracts/TellorAccess.sol": {
       "lastModificationDate": 1618507096918,
-      "contentHash": "a6da5b808add251749877114aa8e389b",
+      "contentHash": "019f2f9c2c90612e4fb729160b86ca64",
       "sourceName": "contracts/TellorAccess.sol",
       "solcConfig": {
         "version": "0.7.0",
@@ -248,7 +248,7 @@
     },
     "/home/nfett/coder/tellorAccess/contracts/SafeMath.sol": {
       "lastModificationDate": 1618509107332,
-      "contentHash": "2714d59db037275a2134d461512d4a50",
+      "contentHash": "007108e501705726b7ec4272eee62098",
       "sourceName": "contracts/SafeMath.sol",
       "solcConfig": {
         "version": "0.7.0",

@@ -8,13 +8,18 @@ contract TellorAccess is AccessControl {
 
     using SafeMath for uint256;
     
+    /*Storage*/
+    mapping(uint256 => mapping(uint256 => uint256)) public values; //requestId -> timestamp -> value
+    mapping(uint256 => uint256[]) public timestamps; //timestamp to array of values
+    bytes32 public constant REPORTER_ROLE = keccak256("reporter");//used in access contract, the role of a given party
+
+    /*Events*/
     event NewValue(uint256 _requestId, uint256 _time, uint256 _value);
     
-    mapping(uint256 => mapping(uint256 => uint256)) public values; //requestId -> timestamp -> value
-    mapping(uint256 => uint256[]) public timestamps;
-    
-    bytes32 public constant REPORTER_ROLE = keccak256("reporter");
-
+    /*Functions*/
+    /**
+     * @dev Constructor which sets the sender as the default admin and the base roles
+    */
     constructor () {
         _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _setRoleAdmin(REPORTER_ROLE, DEFAULT_ADMIN_ROLE);
