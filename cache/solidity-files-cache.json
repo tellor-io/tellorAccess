@@ -1,8 +1,8 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/home/brenda/projects/bsc/TellorPlayground/contracts/Migrations.sol": {
-      "lastModificationDate": 1614608738270,
+    "/home/nfett/coder/tellorAccess/contracts/Migrations.sol": {
+      "lastModificationDate": 1618507096917,
       "contentHash": "ca8d6ca8a6edf34f149a5095a8b074c9",
       "sourceName": "contracts/Migrations.sol",
       "solcConfig": {
@@ -35,220 +35,9 @@
         "Migrations"
       ]
     },
-    "/home/brenda/projects/bsc/TellorPlayground/contracts/TellorPlayground.sol": {
-      "lastModificationDate": 1614608760330,
-      "contentHash": "e289bb28a6bd0a24805a51e300fff64c",
-      "sourceName": "contracts/TellorPlayground.sol",
-      "solcConfig": {
-        "version": "0.7.0",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 999999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "@openzeppelin/contracts/access/AccessControl.sol"
-      ],
-      "versionPragmas": [
-        "0.7.0"
-      ],
-      "artifacts": [
-        "SafeMath",
-        "TellorPlayground"
-      ]
-    },
-    "/home/brenda/projects/bsc/TellorPlayground/node_modules/@openzeppelin/contracts/access/AccessControl.sol": {
-      "lastModificationDate": 1614608914500,
-      "contentHash": "80fba54514bd6969409886d7f3d9ec78",
-      "sourceName": "@openzeppelin/contracts/access/AccessControl.sol",
-      "solcConfig": {
-        "version": "0.7.0",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 999999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "../utils/EnumerableSet.sol",
-        "../utils/Address.sol",
-        "../GSN/Context.sol"
-      ],
-      "versionPragmas": [
-        ">=0.6.0 <0.8.0"
-      ],
-      "artifacts": [
-        "AccessControl"
-      ]
-    },
-    "/home/brenda/projects/bsc/TellorPlayground/node_modules/@openzeppelin/contracts/utils/EnumerableSet.sol": {
-      "lastModificationDate": 1614608914680,
-      "contentHash": "7d5806dec94de00ddcfb1e9fdd6c9545",
-      "sourceName": "@openzeppelin/contracts/utils/EnumerableSet.sol",
-      "solcConfig": {
-        "version": "0.7.0",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 999999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.6.0 <0.8.0"
-      ],
-      "artifacts": [
-        "EnumerableSet"
-      ]
-    },
-    "/home/brenda/projects/bsc/TellorPlayground/node_modules/@openzeppelin/contracts/utils/Address.sol": {
-      "lastModificationDate": 1614608914510,
-      "contentHash": "72d77402f6854b7ccf9af282e805f292",
-      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
-      "solcConfig": {
-        "version": "0.7.0",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 999999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.6.2 <0.8.0"
-      ],
-      "artifacts": [
-        "Address"
-      ]
-    },
-    "/home/brenda/projects/bsc/TellorPlayground/node_modules/@openzeppelin/contracts/GSN/Context.sol": {
-      "lastModificationDate": 1614608914560,
-      "contentHash": "2adbd82f6d055a4751566d4671512b03",
-      "sourceName": "@openzeppelin/contracts/GSN/Context.sol",
-      "solcConfig": {
-        "version": "0.7.0",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 999999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.6.0 <0.8.0"
-      ],
-      "artifacts": [
-        "Context"
-      ]
-    },
-    "/home/brenda/projects/bsc/tellorAccess/contracts/Migrations.sol": {
-      "lastModificationDate": 1615946343310,
-      "contentHash": "ca8d6ca8a6edf34f149a5095a8b074c9",
-      "sourceName": "contracts/Migrations.sol",
-      "solcConfig": {
-        "version": "0.7.0",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 999999
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.4.22 <0.8.0"
-      ],
-      "artifacts": [
-        "Migrations"
-      ]
-    },
-    "/home/brenda/projects/bsc/tellorAccess/contracts/TellorAccess.sol": {
-      "lastModificationDate": 1617678702710,
-      "contentHash": "c1a61132d26cdc302d52a6be3cbc07f5",
+    "/home/nfett/coder/tellorAccess/contracts/TellorAccess.sol": {
+      "lastModificationDate": 1618507096918,
+      "contentHash": "019f2f9c2c90612e4fb729160b86ca64",
       "sourceName": "contracts/TellorAccess.sol",
       "solcConfig": {
         "version": "0.7.0",
@@ -273,19 +62,19 @@
         }
       },
       "imports": [
-        "@openzeppelin/contracts/access/AccessControl.sol"
+        "@openzeppelin/contracts/access/AccessControl.sol",
+        "./SafeMath.sol"
       ],
       "versionPragmas": [
         "0.7.0"
       ],
       "artifacts": [
-        "SafeMath",
         "TellorAccess"
       ]
     },
-    "/home/brenda/projects/bsc/tellorAccess/node_modules/@openzeppelin/contracts/access/AccessControl.sol": {
-      "lastModificationDate": 1615948154930,
-      "contentHash": "80fba54514bd6969409886d7f3d9ec78",
+    "/home/nfett/coder/tellorAccess/node_modules/@openzeppelin/contracts/access/AccessControl.sol": {
+      "lastModificationDate": 1618507406887,
+      "contentHash": "54eb0b53c109558e8312811342e95bf0",
       "sourceName": "@openzeppelin/contracts/access/AccessControl.sol",
       "solcConfig": {
         "version": "0.7.0",
@@ -312,7 +101,7 @@
       "imports": [
         "../utils/EnumerableSet.sol",
         "../utils/Address.sol",
-        "../GSN/Context.sol"
+        "../utils/Context.sol"
       ],
       "versionPragmas": [
         ">=0.6.0 <0.8.0"
@@ -321,9 +110,9 @@
         "AccessControl"
       ]
     },
-    "/home/brenda/projects/bsc/tellorAccess/node_modules/@openzeppelin/contracts/utils/EnumerableSet.sol": {
-      "lastModificationDate": 1615948155040,
-      "contentHash": "7d5806dec94de00ddcfb1e9fdd6c9545",
+    "/home/nfett/coder/tellorAccess/node_modules/@openzeppelin/contracts/utils/EnumerableSet.sol": {
+      "lastModificationDate": 1618507407541,
+      "contentHash": "db7b1afdb2c204e1e52100b79f0c847e",
       "sourceName": "@openzeppelin/contracts/utils/EnumerableSet.sol",
       "solcConfig": {
         "version": "0.7.0",
@@ -355,9 +144,9 @@
         "EnumerableSet"
       ]
     },
-    "/home/brenda/projects/bsc/tellorAccess/node_modules/@openzeppelin/contracts/utils/Address.sol": {
-      "lastModificationDate": 1615948154940,
-      "contentHash": "72d77402f6854b7ccf9af282e805f292",
+    "/home/nfett/coder/tellorAccess/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1618507406933,
+      "contentHash": "7aa46886ff5abe7515496208a5e2ce5a",
       "sourceName": "@openzeppelin/contracts/utils/Address.sol",
       "solcConfig": {
         "version": "0.7.0",
@@ -389,8 +178,8 @@
         "Address"
       ]
     },
-    "/home/brenda/projects/bsc/tellorAccess/node_modules/@openzeppelin/contracts/GSN/Context.sol": {
-      "lastModificationDate": 1615948154970,
+    "/home/nfett/coder/tellorAccess/node_modules/@openzeppelin/contracts/GSN/Context.sol": {
+      "lastModificationDate": 1618507124174,
       "contentHash": "2adbd82f6d055a4751566d4671512b03",
       "sourceName": "@openzeppelin/contracts/GSN/Context.sol",
       "solcConfig": {
@@ -421,6 +210,74 @@
       ],
       "artifacts": [
         "Context"
+      ]
+    },
+    "/home/nfett/coder/tellorAccess/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1618507407107,
+      "contentHash": "2adbd82f6d055a4751566d4671512b03",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.7.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 999999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/home/nfett/coder/tellorAccess/contracts/SafeMath.sol": {
+      "lastModificationDate": 1618509107332,
+      "contentHash": "007108e501705726b7ec4272eee62098",
+      "sourceName": "contracts/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 999999
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.7.0"
+      ],
+      "artifacts": [
+        "SafeMath"
       ]
     }
   }

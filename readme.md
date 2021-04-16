@@ -13,7 +13,6 @@
 </p>
 
 
-# TL:DR
 Tellor Access allows the fellowship (a specified group chosen by the community) to provide numerical data to any chain. 
 
 
@@ -71,3 +70,33 @@ contract BtcPriceContract is TellorAccess {
     function submitValue(uint256 _requestId,uint256 _value)  external;
 ```
 
+## Local set up and testing
+
+Install Dependencies
+```
+npm i
+```
+Compile Smart Contracts
+```
+npx hardhat compile
+```
+
+Test Locally
+```
+npx hardhat test
+```
+
+## Maintainers <a name="maintainers"> </a> 
+This repository is maintained by the [Tellor team](https://github.com/orgs/tellor-io/people)
+
+
+## How to Contribute<a name="how2contribute"> </a>  
+Join our Discord or Telegram:
+[<img src="./public/telegram.png" width="24" height="24">](https://t.me/tellor)
+[<img src="./public/discord.png" width="24" height="24">](https://discord.gg/zFcM3G)
+
+Check out our issues log here on Github or reach out to us if you have any ideas!
+
+## Copyright
+
+Tellor Inc. 2021
