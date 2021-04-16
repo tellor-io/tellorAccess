@@ -247,8 +247,8 @@
       ]
     },
     "/home/brenda/projects/bsc/tellorAccess/contracts/TellorAccess.sol": {
-      "lastModificationDate": 1617678702710,
-      "contentHash": "c1a61132d26cdc302d52a6be3cbc07f5",
+      "lastModificationDate": 1618490710043,
+      "contentHash": "51c71cd2b7f7c0aa918ffc6169570d7c",
       "sourceName": "contracts/TellorAccess.sol",
       "solcConfig": {
         "version": "0.7.0",
@@ -284,7 +284,7 @@
       ]
     },
     "/home/brenda/projects/bsc/tellorAccess/node_modules/@openzeppelin/contracts/access/AccessControl.sol": {
-      "lastModificationDate": 1615948154930,
+      "lastModificationDate": 1618349737790,
       "contentHash": "80fba54514bd6969409886d7f3d9ec78",
       "sourceName": "@openzeppelin/contracts/access/AccessControl.sol",
       "solcConfig": {
@@ -322,7 +322,7 @@
       ]
     },
     "/home/brenda/projects/bsc/tellorAccess/node_modules/@openzeppelin/contracts/utils/EnumerableSet.sol": {
-      "lastModificationDate": 1615948155040,
+      "lastModificationDate": 1618349737890,
       "contentHash": "7d5806dec94de00ddcfb1e9fdd6c9545",
       "sourceName": "@openzeppelin/contracts/utils/EnumerableSet.sol",
       "solcConfig": {
@@ -356,7 +356,7 @@
       ]
     },
     "/home/brenda/projects/bsc/tellorAccess/node_modules/@openzeppelin/contracts/utils/Address.sol": {
-      "lastModificationDate": 1615948154940,
+      "lastModificationDate": 1618349737790,
       "contentHash": "72d77402f6854b7ccf9af282e805f292",
       "sourceName": "@openzeppelin/contracts/utils/Address.sol",
       "solcConfig": {
@@ -390,7 +390,7 @@
       ]
     },
     "/home/brenda/projects/bsc/tellorAccess/node_modules/@openzeppelin/contracts/GSN/Context.sol": {
-      "lastModificationDate": 1615948154970,
+      "lastModificationDate": 1618349737830,
       "contentHash": "2adbd82f6d055a4751566d4671512b03",
       "sourceName": "@openzeppelin/contracts/GSN/Context.sol",
       "solcConfig": {

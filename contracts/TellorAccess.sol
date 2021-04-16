@@ -120,7 +120,7 @@ contract TellorAccess is AccessControl {
         uint256 _count = getNewValueCountbyRequestId(requestId);
         uint256 _time =
             getTimestampbyRequestIDandIndex(requestId, _count - 1);
-        uint256 value = retrieveData(requestId, _time);
+        value = retrieveData(requestId, _time);
         if (value > 0) return (true, value, _time);
         return (false, 0, _time);
     }
@@ -167,7 +167,8 @@ contract TellorAccess is AccessControl {
      * @param value the value for the requestId
     */
     function submitValue(uint256 requestId,uint256 value)  external {
-        require(isReporter(msg.sender) || isAdmin(msg.sender), "Sender must be an Admin or Reporter to submitValue");
+        //Line 171 is removed only for testnets to allow users to submit data
+        //require(isReporter(msg.sender) || isAdmin(msg.sender), "Sender must be an Admin or Reporter to submitValue");
         values[requestId][block.timestamp] = value;
         timestamps[requestId].push(block.timestamp);
         emit NewValue(requestId, block.timestamp, value);
